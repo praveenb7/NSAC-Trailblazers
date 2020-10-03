@@ -56,3 +56,32 @@ class RescueCenter(models.Model):
         related_name="residents"
     )
 
+
+class UserReport(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    location = models.PointField(srid=4326, geography=True)
+    image = models.ImageField()
+    timestamp = models.DateTimeField(auto_now_add = True)
+    verified = models.BooleanField(default = False)
+
+class DeviceReports(models.Model):
+    location = models.PointField(srid=4326, geography=True)
+    image = models.ImageField()
+    temperature = models.FloatField()
+    humidity = models.FloatField()
+    timestamp = models.DateTimeField(auto_now_add = True)
+    verified = models.BooleanField(default = False)
+
+class UserReportReview(models.Model):
+    report = models.ForeignKey(
+        'core.UserReport',
+        on_delete=models.CASCADE,
+    )
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+    valid = models.BooleanField()
