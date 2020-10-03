@@ -106,3 +106,4 @@ wrapt==1.11.2
 zipp==2.1.0
 
 geopandas
+djangorestframework-gis

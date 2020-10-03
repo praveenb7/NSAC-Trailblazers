@@ -33,7 +33,7 @@ router.register('user-report-review', views.UserReportReviewViewSet, basename='u
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', core_views.Home, name='home'),
+    path('', include('core.urls', namespace='core')),
     path('api/', include(router.urls), name='api'),
 ]
 

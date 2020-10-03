@@ -13,9 +13,7 @@ from . import tasks
 # Create your views here.
 
 def Home(request):
-    tasks.sleepy.delay()
-    return render(request, "index.html")
-    # return redirect()
+    return render(request, "user/dashboard.html")
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
