@@ -11,18 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca5653c-99d9-4e9d-ad07-1732f35dee9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend2/core/testing_pkl_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend2/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,8 +40,53 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.testing_pkl_file">
+    <configuration name="predict_func" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Spot-That-Fire-V3.0-Nasa-Space-Apps-Challenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend2/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend2/core/predict_func.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing_pkl_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Spot-That-Fire-V3.0-Nasa-Space-Apps-Challenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend2/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend2/core/testing_pkl_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -49,6 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testing_pkl_file" />
+        <item itemvalue="Python.predict_func" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -65,7 +115,7 @@
       <updated>1601695800151</updated>
       <workItem from="1601695801364" duration="5040000" />
       <workItem from="1601702963449" duration="302000" />
-      <workItem from="1601722648403" duration="3232000" />
+      <workItem from="1601722648403" duration="9648000" />
     </task>
     <servers />
   </component>
@@ -85,13 +135,53 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1113" y="355" width="569" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601697057541">
+    <state x="1113" y="355" width="583" height="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601732975892">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
-    <state x="1113" y="355" width="569" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1864.1053@0.27.1864.1053" timestamp="1601697057541" />
+    <state x="1113" y="355" width="583" height="410" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1864.1053@0.27.1864.1053" timestamp="1601732975892" />
     <state x="1060" y="262" width="666" height="590" key="#docker-compose.yml:_Compose_Deployment" timestamp="1601696477850">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
     <state x="1060" y="262" width="666" height="590" key="#docker-compose.yml:_Compose_Deployment/0.27.1864.1053@0.27.1864.1053" timestamp="1601696477850" />
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1601735189874">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189874" />
+    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1601735189872">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="275" key="GridCell.Tab.0.center/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189872" />
+    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1601735189871">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="275" key="GridCell.Tab.0.left/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189871" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1601735189873">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="275" key="GridCell.Tab.0.right/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189873" />
+    <state width="1818" height="340" key="GridCell.Tab.1.bottom" timestamp="1601733880059">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="340" key="GridCell.Tab.1.bottom/0.27.1864.1053@0.27.1864.1053" timestamp="1601733880059" />
+    <state width="1818" height="340" key="GridCell.Tab.1.center" timestamp="1601733880059">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="340" key="GridCell.Tab.1.center/0.27.1864.1053@0.27.1864.1053" timestamp="1601733880059" />
+    <state width="1818" height="340" key="GridCell.Tab.1.left" timestamp="1601733880059">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="340" key="GridCell.Tab.1.left/0.27.1864.1053@0.27.1864.1053" timestamp="1601733880059" />
+    <state width="1818" height="340" key="GridCell.Tab.1.right" timestamp="1601733880059">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state width="1818" height="340" key="GridCell.Tab.1.right/0.27.1864.1053@0.27.1864.1053" timestamp="1601733880059" />
+    <state x="733" y="27" width="909" height="1009" key="dock-window-1" timestamp="1601735189934">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state x="733" y="27" width="909" height="1009" key="dock-window-1/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189934" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spot_That_Fire_V3_0_Nasa_Space_Apps_Challenge$testing_pkl_file.coverage" NAME="testing_pkl_file Coverage Results" MODIFIED="1601734580923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend2/core" />
+    <SUITE FILE_PATH="coverage/Spot_That_Fire_V3_0_Nasa_Space_Apps_Challenge$predict_func.coverage" NAME="predict_func Coverage Results" MODIFIED="1601733872792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend2/core" />
   </component>
 </project>

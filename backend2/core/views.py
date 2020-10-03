@@ -1,3 +1,5 @@
+from django.contrib.gis.geos import GEOSGeometry
+from django.contrib.gis.measure import Distance
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework import permissions
@@ -6,11 +8,12 @@ from . import serializers
 from . import models
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-
+from . import tasks
 
 # Create your views here.
 
 def Home(request):
+    tasks.sleepy.delay()
     return render(request, "index.html")
     # return redirect()
 
@@ -34,7 +37,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
         return profile
 
     def create(self, request, *args, **kwargs):
-        data = request.data
+        data = self.request.data
         id = self.request.user.id
         user = models.Profile.objects.get(id=id)
 
@@ -67,8 +70,8 @@ class FireStationViewSet(viewsets.ModelViewSet):
         else:
             firestations = models.FireStation.objects.all()
 
-        latitude = request.query_params.get('latitude' or None)
-        longitude = request.query_params.get('longitude' or None)
+        latitude = self.request.query_params.get('latitude' or None)
+        longitude = self.request.query_params.get('longitude' or None)
         if latitude and longitude:
             ref_location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
             firestations = firestations.annotate(distance=Distance("location", ref_location)).order_by('distance')[0:6]
@@ -92,8 +95,8 @@ class RescueCenterViewSet(viewsets.ModelViewSet):
         else:
             rescuecenters = models.RescueCenter.objects.all()
 
-        latitude = request.query_params.get('latitude' or None)
-        longitude = request.query_params.get('longitude' or None)
+        latitude = self.request.query_params.get('latitude' or None)
+        longitude = self.request.query_params.get('longitude' or None)
         if latitude and longitude:
             ref_location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
             rescuecenters = rescuecenters.annotate(distance=Distance("location", ref_location)).order_by('distance')[0:6]
@@ -118,17 +121,17 @@ class UserReportViewSet(viewsets.ModelViewSet):
             userreport = models.UserReport.objects.all()
         return userreport
 
-    def create(self, request, *args, **kwargs):
-        data = request.data
-        id = self.request.user.id
-        user = models.Profile.objects.get(id=id)
-
-        data['user'] = user.id
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
-        headers = self.get_success_headers(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+    # def create(self, request, *args, **kwargs):
+    #     data = self.request.data
+    #     id = self.request.user.id
+    #     user = models.Profile.objects.get(id=id)
+    #
+    #     data['user'] = user.id
+    #     serializer = self.get_serializer(data=self.request.data)
+    #     serializer.is_valid(raise_exception=True)
+    #     self.perform_create(serializer)
+    #     headers = self.get_success_headers(serializer.data)
+    #     return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 
 class DeviceReportViewSet(viewsets.ModelViewSet):

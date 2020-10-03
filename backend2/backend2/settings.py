@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django.contrib.gis',
+    'corsheaders',
+    'rest_framework',
+    'leaflet',
 
     'core',
 ]
@@ -127,6 +130,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
 
 
 # Celery application definition
@@ -135,3 +143,16 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (28.84, 77.10),
+    'DEFAULT_ZOOM': 5,
+    'MAX_ZOOM': 20,
+    'MIN_ZOOM': 1,
+    'SCALE': 'both',
+    'ATTRIBUTION_PREFIX': 'Trailblazers',
+}
+
+MAP_WIDGETS = {
+    "GOOGLE_MAP_API_KEY": os.environ.get('GOOGLE_MAP_API_KEY')
+}

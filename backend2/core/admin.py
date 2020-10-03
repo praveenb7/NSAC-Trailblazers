@@ -1,8 +1,12 @@
 from django.contrib import admin
 from . import models
+from leaflet.admin import LeafletGeoAdmin
 # Register your models here.
 
-admin.site.register(models.Profile)
+class ProfileAdmin(LeafletGeoAdmin):
+    pass
+
+admin.site.register(models.Profile, ProfileAdmin)
 admin.site.register(models.FireStation)
 admin.site.register(models.RescueCenter)
 admin.site.register(models.UserReport)
