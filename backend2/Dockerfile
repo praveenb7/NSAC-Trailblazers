@@ -4,7 +4,6 @@ RUN mkdir /code
 WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-RUN pip install -r requirements2.txt
 
 RUN apt-get update -y
 RUN apt-get install -y aptitude

@@ -16,11 +16,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     ports:
-      - "5432:5432"
+      - 5432:5432
 
   web:
     build: .
-    command: python manage.py runserver
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
@@ -35,6 +35,8 @@ services:
       - "6380:6380"
     volumes:
       - redisdata:/data
+    depends_on:
+      - web
 
 volumes:
   postgres_data:

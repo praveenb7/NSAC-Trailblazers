@@ -14,6 +14,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +65,7 @@
       <updated>1601695800151</updated>
       <workItem from="1601695801364" duration="5040000" />
       <workItem from="1601702963449" duration="302000" />
+      <workItem from="1601722648403" duration="3232000" />
     </task>
     <servers />
   </component>

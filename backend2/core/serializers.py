@@ -21,3 +21,22 @@ class UserReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.UserReport
         fields = "__all__"
+
+class DeviceReportSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.DeviceReports
+        fields = "__all__"
+
+class UserReportReviewSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.UserReportReview
+        fields = "__all__"
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Profile
+        fields = "__all__"
