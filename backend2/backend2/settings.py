@@ -148,7 +148,7 @@ LEAFLET_CONFIG = {
     'DEFAULT_CENTER': (28.84, 77.10),
     'DEFAULT_ZOOM': 5,
     'MAX_ZOOM': 20,
-    'MIN_ZOOM': 1,
+    'MIN_ZOOM': 3,
     'SCALE': 'both',
     'ATTRIBUTION_PREFIX': 'Trailblazers',
 }

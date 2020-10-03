@@ -30,6 +30,7 @@ class FireStation(models.Model):
     mobile = models.CharField(max_length=15)
     alternate_mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
+    address  =models.TextField(default='', blank=True, null=True)
     firetendors = models.PositiveSmallIntegerField()
     staff = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
@@ -47,6 +48,7 @@ class RescueCenter(models.Model):
     mobile = models.CharField(max_length=15)
     alternate_mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
+    address = models.TextField(default='', blank=True, null=True)
     staff = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
         related_name="rescue_staff"

@@ -2,6 +2,7 @@ from django.contrib import admin
 from . import models
 from leaflet.admin import LeafletGeoAdmin
 # Register your models here.
+admin.site.site_header = 'Trailblazers 2020'
 
 class ProfileAdmin(LeafletGeoAdmin):
     pass
