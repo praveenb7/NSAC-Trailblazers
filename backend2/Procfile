@@ -1,0 +1,3 @@
+release: python manage.py migrate --noinput
+web: gunicorn backend2.wsgi
+worker: REMAP_SIGTERM=SIGQUIT celery -A backend2 worker -l info

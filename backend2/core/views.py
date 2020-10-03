@@ -6,7 +6,13 @@ from . import serializers
 from . import models
 from rest_framework import viewsets, status
 from rest_framework.response import Response
+
+
 # Create your views here.
+
+def Home(request):
+    return render(request, "index.html")
+    # return redirect()
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
@@ -145,4 +151,3 @@ class UserReportReviewViewSet(viewsets.ModelViewSet):
         else:
             userreport = models.UserReportReview.objects.all()
         return userreport
-
