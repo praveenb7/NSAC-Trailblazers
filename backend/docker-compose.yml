@@ -1,13 +1,22 @@
 version: "3.8"
 
+x-environment: &environment
+  POSTGRES_DB: demo
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: db
+#  GOOGLE_MAP_API_KEY: ${GOOGLE_MAP_API_KEY}
+
 services:
   db:
-    image: postgres
+    image: mdillon/postgis
+    container_name: db
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-
+      <<: *environment
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - 5432:5432
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -17,3 +26,15 @@ services:
       - "8000:8000"
     depends_on:
       - db
+
+#  redis:
+#    restart: always
+#    image: redis:latest
+#    ports:
+#      - "6379:6379"
+#    volumes:
+#      - redisdata:/data
+
+volumes:
+  postgres_data:
+#  redisdata:
