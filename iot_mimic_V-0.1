@@ -1,2 +1,36 @@
-#code here
-#https://discord.gg/BCtVJf
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct  3 15:39:47 2020
+
+@author: v.sanjay
+"""
+import pandas as pd
+import random as rd
+import requests as req
+import os
+imagefire = []
+imagenonfire=[]
+folder = './webdata/'
+for filename in os.listdir(folder):
+    if(filename.startswith("fire")):
+        imagefire.append(filename)
+    else:
+        imagenonfire.append(filename)
+imagefire = list(imagefire)
+imagenonfire= list(imagenonfire)
+#print(imagefire)
+#rndimg=rd.choice(imagenonfire)
+#print("random imsg",rndimg)
+ff=pd.read_csv("Forest_fire.csv")
+for i in ff.itertuples():
+    l=list(i)
+    if(l[5]==1):
+        rndimg=rd.choice(imagefire)
+        print(rndimg)
+    else:
+        rndimg=rd.choice(imagenonfire)
+        print(rndimg)
+        
+    
+    
