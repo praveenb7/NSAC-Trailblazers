@@ -9,6 +9,8 @@ import pandas as pd
 import random as rd
 import requests as req
 import os
+def postfiles(ip,port):
+    #module to post to the server
 imagefire = []
 imagenonfire=[]
 folder = './webdata/'
@@ -22,7 +24,7 @@ imagenonfire= list(imagenonfire)
 #print(imagefire)
 #rndimg=rd.choice(imagenonfire)
 #print("random imsg",rndimg)
-ff=pd.read_csv("Forest_fire.csv")
+ff=pd.read_csv("Forest_fire1.csv")
 for i in ff.itertuples():
     l=list(i)
     if(l[5]==1):
