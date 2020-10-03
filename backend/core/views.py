@@ -8,8 +8,6 @@ from rest_framework.generics import RetrieveAPIView
 from rest_framework.decorators import api_view, schema
 
 # Create your views here.
-class FacebookLogin(SocialLoginView):
-    adapter_class = FacebookOAuth2Adapter
 
 class UserViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.UserSerializer

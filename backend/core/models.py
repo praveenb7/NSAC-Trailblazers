@@ -1,4 +1,4 @@
-from django.db import models
+from django.contrib.gis.db import models
 from django.contrib.auth.models import AbstractUser
 
 from django.db.models.signals import pre_save, post_save
@@ -10,7 +10,15 @@ class User(AbstractUser):
     profile_pic = models.ImageField(blank=True, null=True)
 
 
-
+class FireStation(models.Model):
+    user = models.ForeignKey('core.User', on_delete = models.CASCADE)
+    name = models.CharField(max_length = 512)
+    email = models.EmailField()
+    mobile = models.CharField(max_length = 15)
+    alternate_mobile = models.CharField(max_length = 15)
+    location = models.PointField(srid=4326, geography=True)
+    firetendors = models.PositiveSmallIntegerField()
+    staff = models.ManytoManyField("core.User")
 
 
 
