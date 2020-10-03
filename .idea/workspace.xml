@@ -11,676 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca5653c-99d9-4e9d-ad07-1732f35dee9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/contacts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/invoice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/mailbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/mailing-chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/notes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/scrumboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/apps/todolist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/authentication/form-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/authentication/form-2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/cards/card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-countdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-list-group.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-media_object.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/custom-sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/tabs-accordian/custom-accordions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/tabs-accordian/custom-tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/components/timeline/custom-timeline.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/dashboard/dash_1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/dashboard/dash_2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/avatar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/breadcrumb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/color_library.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/custom-pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/custom-tree_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/custom-typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/infobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/miscellaneous.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/popover.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/elements/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/forms/custom-clipboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/forms/switches.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/forms/theme-checkbox-radio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/coming-soon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/contact_us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/error/style-400.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/error/style-500.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/error/style-503.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/error/style-maintanence.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/faq/faq.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/faq/faq2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/helpdesk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/pages/privacy/privacy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/scrollspyNav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/tables/table-basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/users/account-setting.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/users/user-profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/css/widgets/modules-widgets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/90x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/ab-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/boy-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/ca.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/de.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/delete-user-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/drag-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/drag-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/drag-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/dragp-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/dragp-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/dragp-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/dragp-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/faq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/fr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/g-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/g-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/girl-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/girl-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/girl-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/girl-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/grid-blog-style-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/grid-blog-style-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/grid-blog-style-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/headphones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/jp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/laptop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/lightbox-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/list-blog-style-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/list-blog-style-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/logo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/masonry-blog-style-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/masonry-blog-style-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/mindset.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/p6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/p7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/p9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-18.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-19.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-20.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-21.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-22.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-23.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-24.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-25.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-26.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-28.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-29.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-31.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-32.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-34.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/profile-9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/scroll-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/scroll-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/scroll-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/scrumboard-upload-img.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/shoes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/slider-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/slider-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/slider-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/speaker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/sunglass.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/taskboard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/tl-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/tl-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/tl-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/tl-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/video-chat-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/video-chat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/img/watch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/custom-mailbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/invoice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/mailbox-chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/notes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/scrumboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/todoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/apps/todoList2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/authentication/form-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/authentication/form-2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/clipboard/clipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/custom-countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/custom-counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/notification/custom-snackbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/session-timeout/bootstrap-session-timeout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/session-timeout/custom-bootstrap_session_timeout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/components/ui-accordions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/dashboard/dash_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/dashboard/dash_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/elements/custom-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/elements/popovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/elements/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/forms/bootstrap_validation/bs_validation_script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/forms/custom-clipboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/ie11fix/fn.fix-padStart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/libs/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/pages/coming-soon/coming-soon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/pages/faq/faq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/pages/faq/faq2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/pages/helpdesk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/scrollspyNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/users/account-settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/assets/js/widgets/modules-widgets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/apex/apexcharts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/apex/apexcharts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/apex/custom-apexcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/autocomplete/autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/autocomplete/countries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/autocomplete/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/autocomplete/jquery.autocomplete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/autocomplete/jquery.mockjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/blockui/custom-blockui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/blockui/jquery.blockUI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-maxlength/bootstrap-maxlength.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-maxlength/custom-bs-maxlength.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-range-Slider/bootstrap-rangeSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-range-Slider/bootstrap-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-select/bootstrap-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-touchspin/custom-bootstrap-touchspin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/countdown/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/counter/jquery.countTo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/drag-and-drop/dragula/custom-dragula.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/drag-and-drop/dragula/dragula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/drag-and-drop/dragula/dragula.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/drag-and-drop/dragula/example.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/dropify.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/dropify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/fonts/dropify.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/fonts/dropify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/fonts/dropify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/dropify/fonts/dropify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/markdown/custom-markdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/markdown/simplemde.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/markdown/simplemde.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/quill/custom-quill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/quill/quill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/editors/quill/quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/file-upload/file-upload-with-preview.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/file-upload/file-upload-with-preview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/flatpickr/custom-flatpickr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/flatpickr/custom-flatpickr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/flatpickr/flatpickr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/flatpickr/flatpickr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/font-icons/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/fullcalendar/custom-fullcalendar.advance.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/fullcalendar/custom-fullcalendar.advance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/fullcalendar/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/highlight/highlight.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/highlight/styles/monokai-sublime.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/input-mask/input-mask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/input-mask/jquery.inputmask.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-step/custom-jquery.steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-step/jquery.steps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-step/jquery.steps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/africa/jquery-jvectormap-africa-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/asia/jquery-jvectormap-asia-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/continents/jquery-jvectormap-continents-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/europe/jquery-jvectormap-europe-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/jquery-jvectormap-2.0.3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/jquery-jvectormap-2.0.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/jvector_script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/north_america/jquery-jvectormap-north-america-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/oceania/jquery-jvectormap-oceanina-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/south-america/jquery-jvectormap-south-america-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/custom-photswipe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/custom-photswipe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/default-skin/default-skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/default-skin/default-skin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/default-skin/default-skin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/default-skin/preloader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/photoswipe-ui-default.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/photoswipe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/lightbox/photoswipe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/loaders/custom-loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/noUiSlider/custom-nouiSlider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/noUiSlider/custom-nouiSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/noUiSlider/nouislider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/noUiSlider/nouislider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/notification/snackbar/snackbar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/notification/snackbar/snackbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/pricing-table/css/component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/select2/custom-select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/sweetalerts/custom-sweetalert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/sweetalerts/promise-polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/sweetalerts/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/sweetalerts/sweetalert2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/sweetalerts/sweetalert2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/button-ext/buttons.html5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/button-ext/buttons.print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/button-ext/dataTables.buttons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/button-ext/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/custom_dt_custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/custom_dt_html5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/custom_dt_miscellaneous.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/custom_dt_multiple_tables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/custom_miscellaneous.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/datatables-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/datatables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/datatables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/dt-global_style-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/table/datatable/dt-global_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/tagInput/tags-input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/tagInput/tags-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static/plugins/treeview/custom-jstree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/contacts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/invoice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/mailbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/mailing-chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/notes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/scrumboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/apps/todolist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/authentication/form-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/authentication/form-2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/cards/card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-countdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-list-group.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-media_object.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/custom-sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/tabs-accordian/custom-accordions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/tabs-accordian/custom-tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/components/timeline/custom-timeline.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/dashboard/dash_1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/dashboard/dash_2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/avatar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/breadcrumb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/color_library.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/custom-pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/custom-tree_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/custom-typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/infobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/miscellaneous.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/popover.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/elements/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/forms/custom-clipboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/forms/switches.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/forms/theme-checkbox-radio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/coming-soon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/contact_us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/error/style-400.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/error/style-500.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/error/style-503.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/error/style-maintanence.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/faq/faq.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/faq/faq2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/helpdesk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/pages/privacy/privacy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/scrollspyNav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/tables/table-basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/users/account-setting.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/users/user-profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/css/widgets/modules-widgets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/90x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/ab-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/boy-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/boy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/ca.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/de.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/delete-user-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/drag-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/drag-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/drag-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/dragp-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/dragp-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/dragp-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/dragp-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/faq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/fr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/g-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/g-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/girl-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/girl-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/girl-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/girl-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/grid-blog-style-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/grid-blog-style-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/grid-blog-style-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/headphones.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/jp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/laptop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/lightbox-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/list-blog-style-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/list-blog-style-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/logo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/masonry-blog-style-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/masonry-blog-style-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/mindset.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/p6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/p7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/p9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-17.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-18.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-19.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-20.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-21.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-22.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-23.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-24.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-25.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-26.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-28.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-29.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-31.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-32.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-33.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-34.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/profile-9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/scroll-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/scroll-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/scroll-8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/scrumboard-upload-img.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/shoes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/slider-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/slider-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/slider-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/speaker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/sunglass.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/taskboard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/tl-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/tl-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/tl-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/tl-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/video-chat-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/video-chat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/img/watch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/custom-mailbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/invoice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/mailbox-chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/notes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/scrumboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/todoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/apps/todoList2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/authentication/form-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/authentication/form-2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/clipboard/clipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/custom-countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/custom-counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/notification/custom-snackbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/session-timeout/bootstrap-session-timeout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/session-timeout/custom-bootstrap_session_timeout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/components/ui-accordions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/dashboard/dash_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/dashboard/dash_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/elements/custom-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/elements/popovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/elements/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/forms/bootstrap_validation/bs_validation_script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/forms/custom-clipboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/ie11fix/fn.fix-padStart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/libs/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/pages/coming-soon/coming-soon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/pages/faq/faq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/pages/faq/faq2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/pages/helpdesk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/scrollspyNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/users/account-settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/assets/js/widgets/modules-widgets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/apex/apexcharts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/apex/apexcharts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/apex/custom-apexcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/autocomplete/autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/autocomplete/countries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/autocomplete/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/autocomplete/jquery.autocomplete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/autocomplete/jquery.mockjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/blockui/custom-blockui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/blockui/jquery.blockUI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-maxlength/bootstrap-maxlength.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-maxlength/custom-bs-maxlength.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-range-Slider/bootstrap-rangeSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-range-Slider/bootstrap-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-select/bootstrap-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-touchspin/custom-bootstrap-touchspin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/countdown/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/counter/jquery.countTo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/drag-and-drop/dragula/custom-dragula.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/drag-and-drop/dragula/dragula.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/drag-and-drop/dragula/dragula.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/drag-and-drop/dragula/example.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/dropify.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/dropify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/fonts/dropify.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/fonts/dropify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/fonts/dropify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/dropify/fonts/dropify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/markdown/custom-markdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/markdown/simplemde.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/markdown/simplemde.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/quill/custom-quill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/quill/quill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/editors/quill/quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/file-upload/file-upload-with-preview.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/file-upload/file-upload-with-preview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/flatpickr/custom-flatpickr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/flatpickr/custom-flatpickr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/flatpickr/flatpickr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/flatpickr/flatpickr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/css/regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/font-icons/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/fullcalendar/custom-fullcalendar.advance.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/fullcalendar/custom-fullcalendar.advance.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/fullcalendar/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/highlight/highlight.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/highlight/styles/monokai-sublime.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/input-mask/input-mask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/input-mask/jquery.inputmask.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-step/custom-jquery.steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-step/jquery.steps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-step/jquery.steps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/africa/jquery-jvectormap-africa-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/asia/jquery-jvectormap-asia-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/continents/jquery-jvectormap-continents-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/europe/jquery-jvectormap-europe-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/jquery-jvectormap-2.0.3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/jquery-jvectormap-2.0.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/jvector_script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/north_america/jquery-jvectormap-north-america-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/oceania/jquery-jvectormap-oceanina-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/south-america/jquery-jvectormap-south-america-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/custom-photswipe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/custom-photswipe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/default-skin/default-skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/default-skin/default-skin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/default-skin/default-skin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/default-skin/preloader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/photoswipe-ui-default.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/photoswipe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/lightbox/photoswipe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/loaders/custom-loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/noUiSlider/custom-nouiSlider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/noUiSlider/custom-nouiSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/noUiSlider/nouislider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/noUiSlider/nouislider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/notification/snackbar/snackbar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/notification/snackbar/snackbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/pricing-table/css/component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/select2/custom-select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/sweetalerts/custom-sweetalert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/sweetalerts/promise-polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/sweetalerts/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/sweetalerts/sweetalert2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/sweetalerts/sweetalert2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/button-ext/buttons.html5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/button-ext/buttons.print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/button-ext/dataTables.buttons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/button-ext/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/custom_dt_custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/custom_dt_html5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/custom_dt_miscellaneous.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/custom_dt_multiple_tables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/custom_miscellaneous.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/datatables-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/datatables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/datatables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/dt-global_style-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/table/datatable/dt-global_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/tagInput/tags-input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/tagInput/tags-input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/static_in_venv/plugins/treeview/custom-jstree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/empty_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend2/templates/user/community_forum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend2/templates/user/nearby_fire_reports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend2/templates/user/nearby_fire_stations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend2/templates/user/report_fire.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/backend2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/backend2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/backend2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/backend2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend2/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -691,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -703,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -719,7 +58,7 @@
       <recent name="$PROJECT_DIR$/backend2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.testing_pkl_file">
+  <component name="RunManager" selected="Python.views">
     <configuration name="predict_func" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Spot-That-Fire-V3.0-Nasa-Space-Apps-Challenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -764,6 +103,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Spot-That-Fire-V3.0-Nasa-Space-Apps-Challenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend2/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend2/core/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -774,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.testing_pkl_file" />
         <item itemvalue="Python.predict_func" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -793,7 +155,7 @@
       <workItem from="1601695801364" duration="5040000" />
       <workItem from="1601702963449" duration="302000" />
       <workItem from="1601722648403" duration="9648000" />
-      <workItem from="1601735205340" duration="9142000" />
+      <workItem from="1601735205340" duration="12255000" />
     </task>
     <servers />
   </component>
@@ -821,22 +183,22 @@
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
     <state x="1060" y="262" width="666" height="590" key="#docker-compose.yml:_Compose_Deployment/0.27.1864.1053@0.27.1864.1053" timestamp="1601696477850" />
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1601735189874">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1601764748465">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189874" />
-    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1601735189872">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom/0.27.1864.1053@0.27.1864.1053" timestamp="1601764748465" />
+    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1601764748461">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.center/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189872" />
-    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1601735189871">
+    <state width="1818" height="275" key="GridCell.Tab.0.center/0.27.1864.1053@0.27.1864.1053" timestamp="1601764748461" />
+    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1601764748459">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.left/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189871" />
-    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1601735189873">
+    <state width="1818" height="275" key="GridCell.Tab.0.left/0.27.1864.1053@0.27.1864.1053" timestamp="1601764748459" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1601764748462">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.right/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189873" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right/0.27.1864.1053@0.27.1864.1053" timestamp="1601764748462" />
     <state width="1818" height="340" key="GridCell.Tab.1.bottom" timestamp="1601733880059">
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
@@ -857,9 +219,14 @@
       <screen x="0" y="27" width="1864" height="1053" />
     </state>
     <state x="733" y="27" width="909" height="1009" key="dock-window-1/0.27.1864.1053@0.27.1864.1053" timestamp="1601735189934" />
+    <state x="595" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1601763525445">
+      <screen x="0" y="27" width="1864" height="1053" />
+    </state>
+    <state x="595" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1864.1053@0.27.1864.1053" timestamp="1601763525445" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Spot_That_Fire_V3_0_Nasa_Space_Apps_Challenge$testing_pkl_file.coverage" NAME="testing_pkl_file Coverage Results" MODIFIED="1601758109710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend2/core" />
+    <SUITE FILE_PATH="coverage/Spot_That_Fire_V3_0_Nasa_Space_Apps_Challenge$views.coverage" NAME="views Coverage Results" MODIFIED="1601764633637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend2/core" />
     <SUITE FILE_PATH="coverage/Spot_That_Fire_V3_0_Nasa_Space_Apps_Challenge$predict_func.coverage" NAME="predict_func Coverage Results" MODIFIED="1601733872792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend2/core" />
   </component>
 </project>
