@@ -54,48 +54,62 @@ class ProfileViewSet(viewsets.ModelViewSet):
 class FireStationViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.FireStationSerializer
 
-    def get_permissions(self):
-        if self.action == 'list':
-            permission_classes = [permissions.IsAuthenticated]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     if self.action == 'list':
+    #         permission_classes = [permissions.IsAuthenticated]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
 
     def get_queryset(self, pk=None):
         if pk:
-            firestation = models.FireStation.objects.get(id=pk)
+            firestations = models.FireStation.objects.get(id=pk)
         else:
-            firestation = models.FireStation.objects.all()
-        return firestation
+            firestations = models.FireStation.objects.all()
+
+        latitude = request.query_params.get('latitude' or None)
+        longitude = request.query_params.get('longitude' or None)
+        if latitude and longitude:
+            ref_location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
+            firestations = firestations.annotate(distance=Distance("location", ref_location)).order_by('distance')[0:6]
+
+        return firestations
 
 
 class RescueCenterViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.RescueCenterSerializer
 
-    def get_permissions(self):
-        if self.action == 'list':
-            permission_classes = [permissions.IsAuthenticated]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     if self.action == 'list':
+    #         permission_classes = [permissions.IsAuthenticated]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
 
     def get_queryset(self, pk=None):
         if pk:
-            rescuecenter = models.RescueCenter.objects.get(id=pk)
+            rescuecenters = models.RescueCenter.objects.get(id=pk)
         else:
-            rescuecenter = models.RescueCenter.objects.all()
-        return rescuecenter
+            rescuecenters = models.RescueCenter.objects.all()
+
+        latitude = request.query_params.get('latitude' or None)
+        longitude = request.query_params.get('longitude' or None)
+        if latitude and longitude:
+            ref_location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
+            rescuecenters = rescuecenters.annotate(distance=Distance("location", ref_location)).order_by('distance')[0:6]
+
+        return rescuecenters
 
 
 class UserReportViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.UserReportSerializer
 
-    def get_permissions(self):
-        if self.action == 'list':
-            permission_classes = [permissions.IsAuthenticated]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     if self.action == 'list':
+    #         permission_classes = [permissions.IsAuthenticated]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
 
     def get_queryset(self, pk=None):
         if pk:
@@ -120,12 +134,12 @@ class UserReportViewSet(viewsets.ModelViewSet):
 class DeviceReportViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.DeviceReportSerializer
 
-    def get_permissions(self):
-        if self.action == 'list':
-            permission_classes = [permissions.IsAuthenticated]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     if self.action == 'list':
+    #         permission_classes = [permissions.IsAuthenticated]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
 
     def get_queryset(self, pk=None):
         if pk:
@@ -138,12 +152,12 @@ class DeviceReportViewSet(viewsets.ModelViewSet):
 class UserReportReviewViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.DeviceReportSerializer
 
-    def get_permissions(self):
-        if self.action == 'list':
-            permission_classes = [permissions.IsAuthenticated]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     if self.action == 'list':
+    #         permission_classes = [permissions.IsAuthenticated]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
 
     def get_queryset(self, pk=None):
         if pk:
