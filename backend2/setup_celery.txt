@@ -1,0 +1,15 @@
+pip install Celery
+pip install redis
+
+
+brew install redis
+brew services start redis
+
+
+### Config
+celery.py
+__init__.py
+settings.py
+
+
+celery -A <mysite> worker -l info
