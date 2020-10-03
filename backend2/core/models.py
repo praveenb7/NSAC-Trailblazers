@@ -16,7 +16,7 @@ class Profile(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
-    mobile = models.CharField(max_length = 15)
+    mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
 
 
@@ -25,10 +25,10 @@ class FireStation(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
-    name = models.CharField(max_length = 512)
+    name = models.CharField(max_length=512)
     email = models.EmailField()
-    mobile = models.CharField(max_length = 15)
-    alternate_mobile = models.CharField(max_length = 15)
+    mobile = models.CharField(max_length=15)
+    alternate_mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
     firetendors = models.PositiveSmallIntegerField()
     staff = models.ManyToManyField(
@@ -42,10 +42,10 @@ class RescueCenter(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
-    name = models.CharField(max_length = 512)
+    name = models.CharField(max_length=512)
     email = models.EmailField()
-    mobile = models.CharField(max_length = 15)
-    alternate_mobile = models.CharField(max_length = 15)
+    mobile = models.CharField(max_length=15)
+    alternate_mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
     staff = models.ManyToManyField(
         settings.AUTH_USER_MODEL,
@@ -64,16 +64,20 @@ class UserReport(models.Model):
     )
     location = models.PointField(srid=4326, geography=True)
     image = models.ImageField()
-    timestamp = models.DateTimeField(auto_now_add = True)
-    verified = models.BooleanField(default = False)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    process_status = models.SmallIntegerField(default=0)
+    verified = models.BooleanField(default=False)
+
 
 class DeviceReports(models.Model):
     location = models.PointField(srid=4326, geography=True)
     image = models.ImageField()
     temperature = models.FloatField()
     humidity = models.FloatField()
-    timestamp = models.DateTimeField(auto_now_add = True)
-    verified = models.BooleanField(default = False)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    process_status = models.SmallIntegerField(default=0)
+    verified = models.BooleanField(default=False)
+
 
 class UserReportReview(models.Model):
     report = models.ForeignKey(
