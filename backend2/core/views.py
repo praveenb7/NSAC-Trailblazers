@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
 from django.shortcuts import render
@@ -12,11 +13,19 @@ from . import tasks
 
 
 # Create your views here.
-
+@login_required
 def Home(request):
-    return render(request, "user/dashboard.html")
+    user = request.user
+    userprofile = models.Profile.objects.get(user=user)
 
+    context = {
+        "user": user,
+        "profile": userprofile,
 
+    }
+    return render(request, "user/dashboard.html", context)
+
+@login_required
 def NearbyFirestation(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
@@ -32,7 +41,7 @@ def NearbyFirestation(request):
     }
     return render(request, "user/nearby_fire_stations.html", context=context)
 
-
+@login_required
 def NearbyRescueCenter(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
@@ -48,7 +57,7 @@ def NearbyRescueCenter(request):
     }
     return render(request, "user/nearby_rescue_centers.html", context=context)
 
-
+@login_required
 def NearbyFireReports(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
@@ -63,7 +72,7 @@ def NearbyFireReports(request):
     }
     return render(request, "user/nearby_fire_reports.html", context=context)
 
-
+@login_required
 def ReportFire(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
@@ -74,7 +83,7 @@ def ReportFire(request):
     }
     return render(request, "user/report_fire.html", context=context)
 
-
+@login_required
 def CommunityForumView(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
