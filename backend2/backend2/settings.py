@@ -25,7 +25,7 @@ SECRET_KEY = '4zjd7bnm74h&sn$43!)kud*4cy!4to_xv98jg*z6=af8#io0lw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -137,7 +137,6 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Celery application definition
 CELERY_BROKER_URL = 'redis://localhost:6379'
@@ -158,3 +157,14 @@ LEAFLET_CONFIG = {
 MAP_WIDGETS = {
     "GOOGLE_MAP_API_KEY": os.environ.get('GOOGLE_MAP_API_KEY')
 }
+
+AWS_ACCESS_KEY_ID = ' AKIAWF6VJARJED5XY63X'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'cncymca'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+
+AWS_S3_HOST = 's3.us-east-2.amazonaws.com'
