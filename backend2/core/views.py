@@ -169,19 +169,17 @@ class IotDeviceAPIView(APIView):
         image = request.data.get('image' or None)
         location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
         if image:
-            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
             image = request.FILES['image']
             image = File(image)
             device_report = models.DeviceReports.objects.create(location=location, image=image, oxygen=oxygen,
                                                                 temperature=temperature, humidity=humidity,
                                                                 process_status=0, verified=False, ongoing=False)
         else:
-            print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
             device_report = models.DeviceReports.objects.create(location=location, oxygen=oxygen,
                                                                 temperature=temperature, humidity=humidity,
                                                                 process_status=0, verified=False, ongoing=False)
-            # tasks.predict_by_iot_inputs(device_report.id)
 
+        tasks.predict_by_iot_inputs.delay(device_report.id)
         serializer = serializers.DeviceReportSerializer(device_report, many=False)
         return Response({"data": serializer.data})
 

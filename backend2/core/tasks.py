@@ -8,7 +8,7 @@ from django.conf import settings
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
 from django.contrib.gis.measure import Distance as measureDistance
-
+from django.contrib.staticfiles.storage import staticfiles_storage
 
 from celery import shared_task
 import tensorflow as tf
@@ -30,12 +30,18 @@ def classify(path):
     # test_image = image.load_img(path, target_size=(150, 150))
     test_image2 = image.img_to_array(test_image)
     test_image2 = np.expand_dims(test_image2, axis=0)
-    export_path = BASE_DIR + '/dataset/colab.h5'
-    print(export_path)
-    model = tf.keras.models.load_model(export_path)
-    # model = tf.lite.TFLiteConverter.from_keras_model(export_path)
-    res = model.predict_proba(test_image2)
-    return res[0]
+
+    file_path = os.path.join(settings.STATIC_ROOT, 'colab.h5')
+    model = tf.keras.models.load_model(file_path)
+    try:
+        res = model.predict(test_image2)
+        result = res[0]
+        print("$$$$$$$$$$$", result)
+        return True
+    except Exception as error:
+        print("###################", error)
+    return False
+
 
 @shared_task()
 def sleepy():
@@ -56,39 +62,46 @@ def predict_by_iot_inputs(did):
     oxygen = device_report.oxygen
     temperature = device_report.temperature
     humidity = device_report.humidity
-    model = pickle.load(open('model.pkl', 'rb'))
-    int_features = [oxygen, temperature, humidity] # [oxygen, temperature, humidity]
-    final = [np.array(int_features)]
-    prediction = model.predict_proba(final)
-    output = '{0:.{1}f}'.format(prediction[0][1], 2)
-    if int(output) >=0.5:
-        device_report.verified = True
-        device_report.ongoing = True
-        device_report.save()
+    try:
+        # url = staticfiles_storage.url('data/foobar.csv')
+        file_path = os.path.join(settings.STATIC_ROOT, 'model.pkl')
+        model = pickle.load(open(file_path, 'rb'))
+        int_features = [oxygen, temperature, humidity] # [oxygen, temperature, humidity]
+        final = [np.array(int_features)]
+        prediction = model.predict_proba(final)
+        output = '{0:.{1}f}'.format(prediction[0][1], 2)
+        print(output)
+        if float(output) >=0.5:
+            device_report.verified = True
+            device_report.ongoing = True
+            device_report.save()
 
-        try:
-            fire_reports = models.RescueCenter.objects.all()
-            fire_reports = fire_reports.annotate(distance=Distance("location", device_report.location)).order_by(
-                            'distance')[0:6]
-            send_email_to_fire_stations(fire_reports)
-        except:
-            pass
+            try:
+                fire_reports = models.RescueCenter.objects.all()
+                fire_reports = fire_reports.annotate(distance=Distance("location", device_report.location)).order_by(
+                                'distance')[0:6]
+                send_email_to_fire_stations(fire_reports)
+            except:
+                pass
 
-        try:
-            rescuecenters = models.RescueCenter.objects.all()
-            rescuecenters = rescuecenters.annotate(distance=Distance("location", device_report.location)).order_by(
-                            'distance')[0:6]
-            send_email_to_rescue_centers(rescuecenters)
-        except:
-            pass
+            try:
+                rescuecenters = models.RescueCenter.objects.all()
+                rescuecenters = rescuecenters.annotate(distance=Distance("location", device_report.location)).order_by(
+                                'distance')[0:6]
+                send_email_to_rescue_centers(rescuecenters)
+            except:
+                pass
 
-        try:
-            all_users = models.Profile.objects.filter(
-                location__distance_lt=(device_report.location, measureDistance(km=10)))
-            send_email_to_users(all_users)
-        except:
-            pass
-        return True
+            try:
+                all_users = models.Profile.objects.filter(
+                    location__distance_lt=(device_report.location, measureDistance(km=10)))
+                send_email_to_users(all_users)
+            except:
+                pass
+            return True
+    except Exception as error:
+        print("###############################################", error)
+        pass
     return False
 
 BASE_DIR = settings.BASE_DIR
@@ -101,10 +114,7 @@ def predict_by_image(rid):
     path = "127.0.0.1:8000" + report.image.url
     path = report.image.url
     print(report.image)
-    ans = classify(path)
-    print(ans)
-
-    result = True
+    result = classify(path)
 
     if result:
         fire_reports = models.RescueCenter.objects.all()
@@ -119,7 +129,9 @@ def predict_by_image(rid):
         all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
         send_email_to_users(all_users)
 
-    return True
+        return True
+    else:
+        return False
 
 
 @shared_task()
