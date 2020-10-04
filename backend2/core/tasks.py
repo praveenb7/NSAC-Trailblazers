@@ -19,15 +19,13 @@ import os
 from PIL import Image
 import requests
 from io import BytesIO
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 def classify(path):
-    pass
-
-def classify(path):
-    response = requests.get(path)
-    test_image = Image.open(BytesIO(response.content))
-    # test_image = image.load_img(path, target_size=(150, 150))
+    # response = requests.get(path)
+    # test_image = Image.open(BytesIO(response.content))
+    test_image = image.load_img(path, target_size=(150, 150))
     test_image2 = image.img_to_array(test_image)
     test_image2 = np.expand_dims(test_image2, axis=0)
 
@@ -35,7 +33,8 @@ def classify(path):
     model = tf.keras.models.load_model(file_path)
     try:
         res = model.predict(test_image2)
-        result = res[0]
+        result = res[0][0]
+        print(type(result))
         print("$$$$$$$$$$$", result)
         return True
     except Exception as error:
@@ -104,17 +103,22 @@ def predict_by_iot_inputs(did):
         pass
     return False
 
-BASE_DIR = settings.BASE_DIR
+# from backend2 import settings
 
 @shared_task()
 def predict_by_image(rid):
     report = UserReport.objects.filter(id=rid, process_status=0)[0]
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
-    path = "127.0.0.1:8000" + report.image.url
-    path = report.image.url
-    print(report.image)
-    result = classify(path)
+    print(settings.MEDIA_ROOT2)
+    BASE_DIR = getattr(settings, "BASE_DIR", "/")
+    print(BASE_DIR)
+
+    image_path = BASE_DIR + str(report.image.url)
+    # image_path = os.path.join(BASE_DIR, report.image.url)
+
+    print(image_path)
+    result = classify(image_path)
 
     if result:
         fire_reports = models.RescueCenter.objects.all()

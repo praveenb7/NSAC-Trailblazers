@@ -137,6 +137,8 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT2 = os.path.join(BASE_DIR, '')
 MEDIA_URL = '/media/'
 
 # Celery application definition
@@ -159,13 +161,13 @@ MAP_WIDGETS = {
     "GOOGLE_MAP_API_KEY": os.environ.get('GOOGLE_MAP_API_KEY')
 }
 
-AWS_ACCESS_KEY_ID = ' AKIAWF6VJARJED5XY63X'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'cncymca'
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_S3_REGION_NAME = 'us-east-2'
-AWS_S3_SIGNATURE_VERSION = 's3v4'
-
-AWS_S3_HOST = 's3.us-east-2.amazonaws.com'
+# AWS_ACCESS_KEY_ID = ' AKIAWF6VJARJED5XY63X'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'cncymca'
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_S3_REGION_NAME = 'us-east-2'
+# AWS_S3_SIGNATURE_VERSION = 's3v4'
+#
+# AWS_S3_HOST = 's3.us-east-2.amazonaws.com'
