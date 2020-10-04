@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'leaflet',
 
     'core',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

@@ -1,10 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
 
-</body>
-</html>
+{% block extra_stylesheet %}
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" type="text/css" href="plugins\dropify\dropify.min.css">
+    <link href="assets\css\users\account-setting.css" rel="stylesheet" type="text/css">
+    <!--  END CUSTOM STYLE FILE  -->
+{% endblock extra_stylesheet %}
+
+{% block body_css %}
+<body class="sidebar-noneoverflow">
+{% endblock body_css %}
+
+{% block content %}
+        <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        {% include 'sidebar.html' %}
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="row layout-top-spacing">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 layout-spacing">
+                        <div class="widget-content-area br-4">
+                            <div class="widget-one">
+
+                                <h6>Report a Fire !</h6>
+
+                                <p class="">You can easily Report a fire by just clicking the picture and allowing our website to access your Location.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                        <div class="card b-l-card-1 h-100" style="-webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);-moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07); box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);">
+                            <img class="card-img-top" src="assets\img\grid-blog-style-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <strong class="card-category">Sample Image</strong>
+                                <h5 class="card-title mt-2">Instructions</h5>
+                                <p class="card-text meta-info meta-time mb-2"><small class="">3 mins ago</small></p>
+                                <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <button class="btn btn-outline-warning mt-2">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                                    <form id="general-info" class="section general-info">
+                                        <div class="info">
+                                            <h6 class="">General Information</h6>
+                                            <div class="row">
+                                                <form method="post" enctype="multipart/form-data">
+                                                    <div class="col-lg-11 mx-auto">
+                                                        <div class="row">
+
+                                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                                <div class="upload mt-4 pr-md-4">
+                                                                    {% render_field form.image id="input-file-max-fs" class="dropify" data-default-file="{% static 'assets/img/user-profile.jpeg' %}" data-max-file-size="2M" %}
+{#                                                                    <input type="file" id="input-file-max-fs" class="dropify" data-default-file="assets/img/user-profile.jpeg" data-max-file-size="2M">#}
+                                                                    <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Picture</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 mt-md-12 mt-12">
+                                                                <div class="form">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label for="fullName">Latitude</label>
+                                                                                <input type="text" class="form-control mb-4" name="latitude" id="Latitude" placeholder="Latitude" value="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <label for="fullName">Longitude</label>
+                                                                                <input type="text" class="form-control mb-4" name="longitude" id="Longitude" placeholder="Longitude" value="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                <div>
+                                                    <button id="" type="submit" class="btn btn-primary">Report</button>
+                                                </div>
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                    <div class="col-lg-12 col-md-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Recent Fire Reported</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered mb-4">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Date</th>
+                                                <th>Sale</th>
+                                                <th class="text-center">Status</th>
+                                                <th class="text-center">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Shaun</td>
+                                                <td>10/08/2018</td>
+                                                <td>320</td>
+                                                <td class="text-center"><span class="badge badge-success">Approved</span></td>
+                                                <td class="text-center">
+
+                                                    <div class="dropdown custom-dropdown">
+                                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                                        </a>
+
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Date</th>
+                                                <th>Sale</th>
+                                                <th class="text-center">Status</th>
+                                                <th class="text-center">Action</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--  END CONTENT AREA  -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+{% endblock content %}
+
+{% block extra_scripts %}
+
+{% endblock extra_scripts %}
