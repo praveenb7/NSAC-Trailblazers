@@ -1,6 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
+from django.contrib.gis.measure import Distance as measureDistance
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework import permissions
@@ -9,7 +10,7 @@ from . import serializers
 from . import models
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from . import tasks
+from . import tasks, forms
 
 
 # Create your views here.
@@ -84,10 +85,23 @@ def ReportFire(request):
     fire_reports = models.RescueCenter.objects.all()
     fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
+    if request.method == 'POST':
+        form = forms.UserReportForm(request.POST)
+        if form.is_valid():
+            name = request.POST['name']
+            email = request.POST['email']
+            phoneno = request.POST['phoneno']
+            query = request.POST['query']
+            report = models.UserReport()
+            report.save()
+            tasks.predict_by_image(report)
+    else:
+        form = forms.UserReportForm()
     context = {
         "user": user,
         "profile": userprofile,
         "reports": fire_reports,
+        "form": form,
     }
     return render(request, "user/report_fire.html", context=context)
 
@@ -113,6 +127,8 @@ def CommunityForumView(request):
     userprofile = models.Profile.objects.get(user=user)
 
     all_users = models.Profile.objects.all()
+    all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
+
     # all_users = all_users.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {

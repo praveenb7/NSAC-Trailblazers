@@ -4,6 +4,10 @@ import pickle
 import numpy as np
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib.gis.geos import GEOSGeometry
+from django.contrib.gis.db.models.functions import Distance
+from django.contrib.gis.measure import Distance as measureDistance
+
 
 from celery import shared_task
 
@@ -33,7 +37,23 @@ def predict_by_iot_inputs(oxygen, temperature, humidity):
 
 
 @shared_task()
-def predict_by_image():
+def predict_by_image(report):
+    user = report.user
+    userprofile = models.Profile.objects.get(user=user)
+    result = True
+    if result:
+        fire_reports = models.RescueCenter.objects.all()
+        fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:6]
+        send_email_to_users(fire_reports)
+
+        rescuecenters = models.RescueCenter.objects.all()
+        rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by(
+                                                'distance')[0:6]
+        send_email_to_users(rescuecenters)
+
+        all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
+        send_email(all_users)
+
     return True
 
 
