@@ -96,7 +96,7 @@ def NearbyFireReports(request):
     userprofile = models.Profile.objects.get(user=user)
 
     fire_reports = models.UserReport.objects.all().order_by('-timestamp')
-    # fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+    fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
         "user": user,

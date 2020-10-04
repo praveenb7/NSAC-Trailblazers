@@ -38,13 +38,6 @@ def sleepy():
 
 
 @shared_task()
-def predict_fire():
-    if predict_by_iot_inputs(40, 50, 10):
-        return True
-    return False
-
-
-@shared_task()
 def predict_by_iot_inputs(did):
     device_report = models.DeviceReports.objects.get(id=did)
     oxygen = device_report.oxygen
@@ -58,7 +51,7 @@ def predict_by_iot_inputs(did):
         final = [np.array(int_features)]
         prediction = model.predict_proba(final)
         output = '{0:.{1}f}'.format(prediction[0][1], 2)
-        print(output)
+        # print(output)
         if float(output) >=0.5:
             device_report.verified = True
             device_report.ongoing = True
@@ -98,14 +91,14 @@ def predict_by_image(rid):
     report = UserReport.objects.filter(id=rid, process_status=0)[0]
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
-    print(settings.MEDIA_ROOT2)
+    # print(settings.MEDIA_ROOT2)
     BASE_DIR = getattr(settings, "BASE_DIR", "/")
-    print(BASE_DIR)
+    # print(BASE_DIR)
 
     image_path = BASE_DIR + str(report.image.url)
     # image_path = os.path.join(BASE_DIR, report.image.url)
 
-    print(image_path)
+    # print(image_path)
     result = classify(image_path)
 
     if result == 1:
@@ -135,7 +128,7 @@ def send_email_to_users(queryset):
         email = query.user.email
         if email:
             try:
-                send_email(email)
+                send_email_function(email)
                 pass
             except:
                 pass
@@ -148,7 +141,7 @@ def send_email_to_fire_stations(queryset):
         email = query.user.email
         if email:
             try:
-                send_email(email)
+                send_email_function(email)
                 pass
             except:
                 pass
@@ -160,20 +153,15 @@ def send_email_to_fire_stations(queryset):
 def send_email_to_rescue_centers(queryset):
     for query in queryset:
         email = query.user.email
-        if email:
-            try:
-                send_email(email)
-                pass
-            except:
-                pass
 
-    return True
+        send_email_function(email)
 
 
-def send_email(email):
+def send_email_function(email):
     subject = "Fire Alert"
     message = "Fire in your Area"
     from_email = settings.DEFAULT_FROM_EMAIL
-    to_email = [email, ]
+    to_email = [email, 'sanyam19092000@gmail.com']
+    print("####################### Sending Email", email)
     send_mail(subject=subject, message=message, from_email=from_email, recipient_list=to_email, fail_silently=True)
     return True
