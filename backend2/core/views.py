@@ -71,7 +71,7 @@ def NearbyFireReports(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
 
-    fire_reports = models.RescueCenter.objects.all()
+    fire_reports = models.UserReport.objects.all()
     fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
@@ -86,7 +86,7 @@ def NearbyFireReports(request):
 def ReportFire(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
-    fire_reports = models.RescueCenter.objects.all()
+    fire_reports = models.UserReport.objects.all()
     fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     if request.method == 'POST':
@@ -104,6 +104,7 @@ def ReportFire(request):
         return redirect("core:report")
     else:
         form = forms.UserReportForm()
+
     context = {
         "user": user,
         "profile": userprofile,

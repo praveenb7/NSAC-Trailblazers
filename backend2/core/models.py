@@ -72,6 +72,7 @@ class UserReport(models.Model):
     verified = models.BooleanField(default=False)
     ongoing = models.BooleanField(default = False)
 
+
 class DeviceReports(models.Model):
     location = models.PointField(srid=4326, geography=True)
     image = models.ImageField(blank=True, null=True)
@@ -82,6 +83,7 @@ class DeviceReports(models.Model):
     process_status = models.SmallIntegerField(default=0, blank=True, null=True)
     verified = models.BooleanField(default=False)
     ongoing = models.BooleanField(default = False)
+
 
 class UserReportReview(models.Model):
     report = models.ForeignKey(

@@ -2,24 +2,16 @@ from time import sleep
 from .models import UserReport
 from . import models
 import pickle
-import numpy as np
 from django.core.mail import send_mail
-from django.conf import settings
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
 from django.contrib.gis.measure import Distance as measureDistance
-from django.contrib.staticfiles.storage import staticfiles_storage
-
 from celery import shared_task
 import tensorflow as tf
 import numpy as np
 from keras.preprocessing import image
 from django.conf import settings
 import os
-from PIL import Image
-import requests
-from io import BytesIO
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def classify(path):
@@ -34,12 +26,9 @@ def classify(path):
     try:
         res = model.predict(test_image2)
         result = res[0][0]
-        print(type(result))
-        print("$$$$$$$$$$$", result)
-        return True
+        return result
     except Exception as error:
-        print("###################", error)
-    return False
+        return False
 
 
 @shared_task()
@@ -103,7 +92,6 @@ def predict_by_iot_inputs(did):
         pass
     return False
 
-# from backend2 import settings
 
 @shared_task()
 def predict_by_image(rid):
@@ -120,7 +108,10 @@ def predict_by_image(rid):
     print(image_path)
     result = classify(image_path)
 
-    if result:
+    if result == 1:
+        report.verified = True
+        report.ongoing = True
+        report.save()
         fire_reports = models.RescueCenter.objects.all()
         fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:6]
         send_email_to_fire_stations(fire_reports)
@@ -163,6 +154,7 @@ def send_email_to_fire_stations(queryset):
                 pass
 
     return True
+
 
 @shared_task()
 def send_email_to_rescue_centers(queryset):
