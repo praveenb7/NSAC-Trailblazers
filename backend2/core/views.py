@@ -1,4 +1,6 @@
+from django.contrib.auth import authenticate, logout, login
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
 from django.contrib.gis.measure import Distance as measureDistance
@@ -6,6 +8,7 @@ from django.shortcuts import render, redirect
 from rest_framework import viewsets
 from rest_framework import permissions
 from rest_framework.views import APIView
+
 from . import serializers
 from . import models
 from rest_framework import viewsets, status
@@ -17,6 +20,27 @@ from django.core.files import File
 # Create your views here.
 def Home(request):
     return render(request, "index.html")
+
+
+def Logout(request):
+    if request.user:
+        logout(request)
+    return redirect("core:home")
+
+
+def Login(request):
+    logout(request)
+    if request.method == 'POST':
+        form = forms.UserLoginForm(request.POST)
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username.lower(), password=password)
+        if user is not None:
+            login(request, user)
+        return redirect("core:dashboard")
+    else:
+        form = forms.UserLoginForm()
+    return render(request, 'accounts/login.html', {'form': form})
 
 
 # Create your views here.
@@ -71,8 +95,8 @@ def NearbyFireReports(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
 
-    fire_reports = models.UserReport.objects.all()
-    fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+    fire_reports = models.UserReport.objects.all().order_by('-timestamp')
+    # fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
         "user": user,
@@ -118,13 +142,13 @@ def ReportFire(request):
 def ReviewFireReports(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
-    fire_reports = models.RescueCenter.objects.all()
-    fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+    fire_reports_review = models.UserReportReview.objects.all()
+    # fire_reports_review = fire_reports_review.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
         "user": user,
         "profile": userprofile,
-        "reports": fire_reports,
+        "reviews": fire_reports_review,
     }
     return render(request, "user/review_fire_reports.html", context=context)
 

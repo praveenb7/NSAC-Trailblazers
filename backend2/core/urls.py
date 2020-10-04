@@ -5,6 +5,8 @@ app_name = 'core'
 
 urlpatterns = [
     path('', views.Home, name='home'),
+    path('accounts/login/', views.Login, name='login'),
+    path('accounts/logout/', views.Logout, name='logout'),
     path('dashboard/', views.Dashboard, name='dashboard'),
     path('fire-stations/', views.NearbyFirestation, name='fire-stations'),
     path('rescue-centers/', views.NearbyRescueCenter, name='rescue-centers'),
