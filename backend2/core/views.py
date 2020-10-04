@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.db.models.functions import Distance
 from django.contrib.gis.measure import Distance as measureDistance
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework import viewsets
 from rest_framework import permissions
 from rest_framework.views import APIView
@@ -102,7 +102,7 @@ def ReportFire(request):
                                                   ongoing=False)
         rid = int(report.id)
         tasks.predict_by_image.delay(rid)
-
+        return redirect("core:report")
     else:
         form = forms.UserReportForm()
     context = {

@@ -7,8 +7,8 @@ from keras.preprocessing import image
 def classify(path):
   test_image = image.load_img(path, target_size=(150,150))
   test_image2 = image.img_to_array(test_image)
-  test_image2 = np.expand_dims(test_image2,axis=0)
-  model = tf.keras.models.load_model('/content/drive/My Drive/Dataset/colab.h5')
+  test_image2 = np.expand_dims(test_image2, axis=0)
+  model = tf.keras.models.load_model('/content/drive/My Drive/dataset/colab.h5')
   res = model.predict_proba(test_image2)
   return res[0]
 

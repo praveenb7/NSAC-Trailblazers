@@ -19,17 +19,19 @@ import os
 from PIL import Image
 import requests
 from io import BytesIO
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def classify(path):
     response = requests.get(path)
     test_image = Image.open(BytesIO(response.content))
-    print(type(test_image))
     # test_image = image.load_img(path, target_size=(150, 150))
     test_image2 = image.img_to_array(test_image)
     test_image2 = np.expand_dims(test_image2, axis=0)
-    model = tf.keras.models.load_model('/colab.h5')
+    export_path = BASE_DIR + '/dataset/colab.h5'
+    print(export_path)
+    model = tf.keras.models.load_model(export_path)
+    # model = tf.lite.TFLiteConverter.from_keras_model(export_path)
     res = model.predict_proba(test_image2)
     return res[0]
 
