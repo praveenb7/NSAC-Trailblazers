@@ -24,7 +24,6 @@ def Home(request):
 def Dashboard(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
-    tasks.sleepy.delay()
     context = {
         "user": user,
         "profile": userprofile,
@@ -162,24 +161,26 @@ class IotDeviceAPIView(APIView):
     permission_classes = [permissions.AllowAny]
 
     def post(self, request):
-        image_bool = self.request.query_params.get('image') or False
-        oxygen = request.POST['oxygen']
-        temperature = request.POST['temperature']
-        humidity = request.POST['humidity']
-        latitude = request.POST['latitude']
-        longitude = request.POST['longitude']
+        oxygen = request.data.get('oxygen' or None)
+        temperature = request.data.get('temperature' or None)
+        humidity = request.data.get('humidity' or None)
+        latitude = request.data.get('latitude' or None)
+        longitude = request.data.get('longitude' or None)
+        image = request.data.get('image' or None)
         location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
-        if image_bool:
-            image = request.FILES['latitude']
+        if image:
+            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+            image = request.FILES['image']
             image = File(image)
             device_report = models.DeviceReports.objects.create(location=location, image=image, oxygen=oxygen,
                                                                 temperature=temperature, humidity=humidity,
                                                                 process_status=0, verified=False, ongoing=False)
         else:
+            print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
             device_report = models.DeviceReports.objects.create(location=location, oxygen=oxygen,
                                                                 temperature=temperature, humidity=humidity,
                                                                 process_status=0, verified=False, ongoing=False)
-            tasks.predict_by_iot_inputs(device_report.id)
+            # tasks.predict_by_iot_inputs(device_report.id)
 
         serializer = serializers.DeviceReportSerializer(device_report, many=False)
         return Response({"data": serializer.data})

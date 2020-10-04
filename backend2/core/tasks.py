@@ -21,6 +21,8 @@ import requests
 from io import BytesIO
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+def classify(path):
+    pass
 
 def classify(path):
     response = requests.get(path)
