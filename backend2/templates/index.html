@@ -9,7 +9,6 @@
   
   <meta name="description" content="FireAlert">
 
-  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
 
   <title>FireAlert</title>
 
@@ -54,9 +53,11 @@
 {#          <a class="nav-link" href="contact.html">Contact</a>#}
 {#        </li>#}
 {#      </ul>#}
-      <div class="ml-auto my-2 my-lg-0">
-        <button class="btn btn-primary rounded-pill" href="/dashboard">Login</button>
-      </div>
+        <a href="{% url 'core:dashboard' %}">
+          <div class="ml-auto my-2 my-lg-0">
+            <button class="btn btn-primary rounded-pill" >Login</button>
+          </div>
+        </a>
     </div>
   </div>
 </nav>
