@@ -2,9 +2,10 @@ from time import sleep
 from . import models
 import pickle
 import numpy as np
+from django.core.mail import send_mail
+from django.conf import settings
 
 from celery import shared_task
-
 
 @shared_task()
 def sleepy():
@@ -33,4 +34,27 @@ def predict_by_iot_inputs(oxygen, temperature, humidity):
 
 @shared_task()
 def predict_by_image():
+    return True
+
+
+@shared_task()
+def send_email_to_users(queryset):
+    for query in queryset:
+        email = query.user.email
+        if email:
+            try:
+                send_email(email)
+                pass
+            except:
+                pass
+
+    return True
+
+
+def send_email(email):
+    subject = "Fire Alert"
+    message = "Fire in your Area"
+    from_email = settings.DEFAULT_FROM_EMAIL
+    to_email = [email, ]
+    send_mail(subject=subject, message=message, from_email=from_email, recipient_list=to_email, fail_silently=True)
     return True

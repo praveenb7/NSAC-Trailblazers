@@ -32,43 +32,51 @@
                                 <table class="multi-table table table-striped table-bordered table-hover non-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>Username</th>
                                             <th>Name</th>
-                                            <th>Address</th>
-                                            <th>Mobile</th>
-                                            <th>Email</th>
+                                            <th>Position</th>
+                                            <th>Progress</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Salary</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {% for profile in all_users %}
-                                            <tr>
-                                                <td>{{ profile.user.username }}</td>
-                                                <td>{{ profile.user.first_name }} {{ profile.user.last_name }}</td>
-                                                <td>{{ profile.address }}</td>
-                                                <td>{{ profile.mobile }}</td>
-                                                <td>{{ profile.user.email }}</td>
-                                                <td class="text-center">
-                                                    <div class="dropdown custom-dropdown">
-                                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                        </a>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                        </div>
+                                        <tr>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>
+                                                <div class="progress br-30">
+                                                    <div class="progress-bar br-30 bg-warning" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>$90,560</td>
+                                            <td class="text-center">
+                                                <div class="dropdown custom-dropdown">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                        {% endfor %}
+                                                </div>
+                                            </td>
+                                        </tr>
+
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <th>Username</th>
-                                            <th>Name</th>
-                                            <th>Address</th>
-                                            <th>Mobile</th>
-                                            <th>Email</th>
+                                            <th>Location</th>
+                                            <th>Position</th>
+                                            <th>Progress</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Salary</th>
+                                            <th>Action</th>
                                         </tr>
                                     </tfoot>
                                 </table>

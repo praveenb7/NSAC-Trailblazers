@@ -16,6 +16,7 @@ class Profile(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    pic = models.ImageField(default='user pics/pic.webp', upload_to='user pics', blank=True, null=True)
     mobile = models.CharField(max_length=15)
     location = models.PointField(srid=4326, geography=True)
 

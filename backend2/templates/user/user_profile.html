@@ -37,13 +37,14 @@
                                         <div class="info">
                                             <h6 class="">General Information</h6>
                                             <div class="row">
+
                                                 <form>
                                                     <div class="col-lg-11 mx-auto">
                                                         <div class="row">
 
                                                             <div class="col-xl-3 col-lg-12 col-md-4">
                                                                 <div class="upload mt-4 pr-md-4">
-                                                                    <input type="file" id="input-file-max-fs" class="dropify" data-default-file="{% static 'assets/img/user-profile.jpeg' %}" data-max-file-size="2M">
+                                                                    <input type="file" id="input-file-max-fs" class="dropify" data-default-file={{ profile.pic.url }} data-max-file-size="2M">
                                                                     <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Picture</p>
                                                                 </div>
                                                             </div>
@@ -53,13 +54,13 @@
                                                                         <div class="col-sm-6">
                                                                             <div class="form-group">
                                                                                 <label for="fullName">Full Name</label>
-                                                                                <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="Jimmy Turner">
+                                                                                <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-sm-6">
                                                                             <div class="form-group">
                                                                                 <label for="fullName">Mobile</label>
-                                                                                <input type="text" class="form-control mb-4" id="Mobile" placeholder="Mobile" value="Jimmy Turner">
+                                                                                <input type="text" class="form-control mb-4" id="Mobile" placeholder="Mobile">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -67,20 +68,20 @@
                                                                         <div class="col-sm-6">
                                                                             <div class="form-group">
                                                                                 <label for="fullName">Latitude</label>
-                                                                                <input type="text" class="form-control mb-4" id="Latitude" placeholder="Latitude" value="Jimmy Turner">
+                                                                                <input type="text" class="form-control mb-4" id="Latitude" placeholder="Latitude">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-sm-6">
                                                                             <div class="form-group">
                                                                                 <label for="fullName">Longitude</label>
-                                                                                <input type="text" class="form-control mb-4" id="Longitude" placeholder="Longitude" value="Jimmy Turner">
+                                                                                <input type="text" class="form-control mb-4" id="Longitude" placeholder="Longitude">
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="form-group">
                                                                         <label for="profession">Email</label>
-                                                                        <input type="text" class="form-control mb-4" id="profession" placeholder="Designer" value="Web Developer">
+                                                                        <input type="text" class="form-control mb-4" id="profession" placeholder="Designer">
                                                                     </div>
 
                                                                 </div>

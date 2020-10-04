@@ -25,6 +25,7 @@ def Home(request):
     }
     return render(request, "user/dashboard.html", context)
 
+
 @login_required
 def NearbyFirestation(request):
     user = request.user
@@ -41,13 +42,15 @@ def NearbyFirestation(request):
     }
     return render(request, "user/nearby_fire_stations.html", context=context)
 
+
 @login_required
 def NearbyRescueCenter(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
 
     rescuecenters = models.RescueCenter.objects.all()
-    rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+    rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[
+                    0:20]
 
     context = {
         "user": user,
@@ -56,6 +59,7 @@ def NearbyRescueCenter(request):
 
     }
     return render(request, "user/nearby_rescue_centers.html", context=context)
+
 
 @login_required
 def NearbyFireReports(request):
@@ -72,27 +76,63 @@ def NearbyFireReports(request):
     }
     return render(request, "user/nearby_fire_reports.html", context=context)
 
+
 @login_required
 def ReportFire(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
+    fire_reports = models.RescueCenter.objects.all()
+    fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
         "user": user,
         "profile": userprofile,
+        "reports": fire_reports,
     }
     return render(request, "user/report_fire.html", context=context)
+
+
+@login_required
+def ReviewFireReports(request):
+    user = request.user
+    userprofile = models.Profile.objects.get(user=user)
+    fire_reports = models.RescueCenter.objects.all()
+    fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+
+    context = {
+        "user": user,
+        "profile": userprofile,
+        "reports": fire_reports,
+    }
+    return render(request, "user/review_fire_reports.html", context=context)
+
 
 @login_required
 def CommunityForumView(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
 
+    all_users = models.Profile.objects.all()
+    # all_users = all_users.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+
+    context = {
+        "user": user,
+        "all_users": all_users,
+        "profile": userprofile,
+    }
+    return render(request, "user/community_forum.html", context=context)
+
+
+@login_required
+def UserProfileView(request):
+    user = request.user
+    userprofile = models.Profile.objects.get(user=user)
+
     context = {
         "user": user,
         "profile": userprofile,
     }
-    return render(request, "user/community_forum.html", context=context)
+    return render(request, "user/user_profile.html", context=context)
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
