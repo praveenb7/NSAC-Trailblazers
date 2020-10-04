@@ -41,15 +41,16 @@ def predict_by_image(report):
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
     result = True
+
     if result:
         fire_reports = models.RescueCenter.objects.all()
         fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:6]
-        send_email_to_users(fire_reports)
+        send_email_to_fire_stations(fire_reports)
 
         rescuecenters = models.RescueCenter.objects.all()
         rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by(
                                                 'distance')[0:6]
-        send_email_to_users(rescuecenters)
+        send_email_to_rescue_centers(rescuecenters)
 
         all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
         send_email(all_users)
@@ -59,6 +60,32 @@ def predict_by_image(report):
 
 @shared_task()
 def send_email_to_users(queryset):
+    for query in queryset:
+        email = query.user.email
+        if email:
+            try:
+                send_email(email)
+                pass
+            except:
+                pass
+
+    return True
+
+@shared_task()
+def send_email_to_fire_stations(queryset):
+    for query in queryset:
+        email = query.user.email
+        if email:
+            try:
+                send_email(email)
+                pass
+            except:
+                pass
+
+    return True
+
+@shared_task()
+def send_email_to_rescue_centers(queryset):
     for query in queryset:
         email = query.user.email
         if email:

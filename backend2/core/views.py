@@ -18,7 +18,7 @@ from . import tasks, forms
 def Home(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
-
+    tasks.sleepy.delay()
     context = {
         "user": user,
         "profile": userprofile,
@@ -126,10 +126,10 @@ def CommunityForumView(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
 
-    all_users = models.Profile.objects.all()
+    # all_users = models.Profile.objects.all()
+    # all_users = all_users.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
     all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
 
-    # all_users = all_users.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     context = {
         "user": user,
