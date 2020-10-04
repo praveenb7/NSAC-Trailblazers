@@ -5,4 +5,4 @@ from .models import UserReport
 class UserReportForm(forms.ModelForm):
     class Meta:
         model = UserReport
-        fields = '__all__'
+        exclude = ['location']

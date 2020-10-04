@@ -68,9 +68,9 @@ class UserReport(models.Model):
     location = models.PointField(srid=4326, geography=True)
     image = models.ImageField()
     timestamp = models.DateTimeField(auto_now_add=True)
-    process_status = models.SmallIntegerField(default=0)
+    process_status = models.SmallIntegerField(default=0, blank=True, null=True)
     verified = models.BooleanField(default=False)
-
+    ongoing = models.BooleanField(default = False)
 
 class DeviceReports(models.Model):
     location = models.PointField(srid=4326, geography=True)
@@ -78,9 +78,9 @@ class DeviceReports(models.Model):
     temperature = models.FloatField()
     humidity = models.FloatField()
     timestamp = models.DateTimeField(auto_now_add=True)
-    process_status = models.SmallIntegerField(default=0)
+    process_status = models.SmallIntegerField(default=0, blank=True, null=True)
     verified = models.BooleanField(default=False)
-
+    ongoing = models.BooleanField(default = False)
 
 class UserReportReview(models.Model):
     report = models.ForeignKey(

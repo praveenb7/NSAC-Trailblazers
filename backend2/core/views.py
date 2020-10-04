@@ -11,6 +11,7 @@ from . import models
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from . import tasks, forms
+from django.core.files import File
 
 
 # Create your views here.
@@ -33,7 +34,7 @@ def NearbyFirestation(request):
     userprofile = models.Profile.objects.get(user=user)
 
     firestations = models.FireStation.objects.all()
-    firestations = firestations.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
+    firestations = firestations.annotate(distance=Distance("location", userprofile.location)).order_by('distance')
 
     context = {
         "user": user,
@@ -50,8 +51,7 @@ def NearbyRescueCenter(request):
     userprofile = models.Profile.objects.get(user=user)
 
     rescuecenters = models.RescueCenter.objects.all()
-    rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[
-                    0:20]
+    rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by('distance')
 
     context = {
         "user": user,
@@ -86,15 +86,17 @@ def ReportFire(request):
     fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
 
     if request.method == 'POST':
-        form = forms.UserReportForm(request.POST)
-        if form.is_valid():
-            name = request.POST['name']
-            email = request.POST['email']
-            phoneno = request.POST['phoneno']
-            query = request.POST['query']
-            report = models.UserReport()
-            report.save()
-            tasks.predict_by_image(report)
+        form = forms.UserReportForm(request.POST, request.FILES)
+        print(request.POST)
+        latitude = request.POST['latitude']
+        longitude = request.POST['longitude']
+        location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
+        image = request.FILES['image']
+        image = File(image)
+        report = models.UserReport.objects.create(image=image, location=location, user=user, verified=False, ongoing=False)
+        rid = int(report.id)
+        tasks.predict_by_image.delay(rid)
+
     else:
         form = forms.UserReportForm()
     context = {

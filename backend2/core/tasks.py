@@ -1,4 +1,5 @@
 from time import sleep
+from .models import UserReport
 from . import models
 import pickle
 import numpy as np
@@ -37,7 +38,8 @@ def predict_by_iot_inputs(oxygen, temperature, humidity):
 
 
 @shared_task()
-def predict_by_image(report):
+def predict_by_image(rid):
+    report = UserReport.objects.filter(id=rid, process_status=0)[0]
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
     result = True
