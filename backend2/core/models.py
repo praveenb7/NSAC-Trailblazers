@@ -74,7 +74,8 @@ class UserReport(models.Model):
 
 class DeviceReports(models.Model):
     location = models.PointField(srid=4326, geography=True)
-    image = models.ImageField()
+    image = models.ImageField(blank=True, null=True)
+    oxygen = models.FloatField()
     temperature = models.FloatField()
     humidity = models.FloatField()
     timestamp = models.DateTimeField(auto_now_add=True)

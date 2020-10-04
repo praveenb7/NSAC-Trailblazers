@@ -11,6 +11,27 @@ from django.contrib.gis.measure import Distance as measureDistance
 
 
 from celery import shared_task
+import tensorflow as tf
+import numpy as np
+from keras.preprocessing import image
+from django.conf import settings
+import os
+from PIL import Image
+import requests
+from io import BytesIO
+
+
+
+def classify(path):
+    response = requests.get(path)
+    test_image = Image.open(BytesIO(response.content))
+    print(type(test_image))
+    # test_image = image.load_img(path, target_size=(150, 150))
+    test_image2 = image.img_to_array(test_image)
+    test_image2 = np.expand_dims(test_image2, axis=0)
+    model = tf.keras.models.load_model('/colab.h5')
+    res = model.predict_proba(test_image2)
+    return res[0]
 
 @shared_task()
 def sleepy():
@@ -26,22 +47,59 @@ def predict_fire():
 
 
 @shared_task()
-def predict_by_iot_inputs(oxygen, temperature, humidity):
+def predict_by_iot_inputs(did):
+    device_report = models.DeviceReports.objects.get(id=did)
+    oxygen = device_report.oxygen
+    temperature = device_report.temperature
+    humidity = device_report.humidity
     model = pickle.load(open('model.pkl', 'rb'))
     int_features = [oxygen, temperature, humidity] # [oxygen, temperature, humidity]
     final = [np.array(int_features)]
     prediction = model.predict_proba(final)
     output = '{0:.{1}f}'.format(prediction[0][1], 2)
     if int(output) >=0.5:
+        device_report.verified = True
+        device_report.ongoing = True
+        device_report.save()
+
+        try:
+            fire_reports = models.RescueCenter.objects.all()
+            fire_reports = fire_reports.annotate(distance=Distance("location", device_report.location)).order_by(
+                            'distance')[0:6]
+            send_email_to_fire_stations(fire_reports)
+        except:
+            pass
+
+        try:
+            rescuecenters = models.RescueCenter.objects.all()
+            rescuecenters = rescuecenters.annotate(distance=Distance("location", device_report.location)).order_by(
+                            'distance')[0:6]
+            send_email_to_rescue_centers(rescuecenters)
+        except:
+            pass
+
+        try:
+            all_users = models.Profile.objects.filter(
+                location__distance_lt=(device_report.location, measureDistance(km=10)))
+            send_email_to_users(all_users)
+        except:
+            pass
         return True
     return False
 
+BASE_DIR = settings.BASE_DIR
 
 @shared_task()
 def predict_by_image(rid):
     report = UserReport.objects.filter(id=rid, process_status=0)[0]
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
+    path = "127.0.0.1:8000" + report.image.url
+    path = report.image.url
+    print(report.image)
+    ans = classify(path)
+    print(ans)
+
     result = True
 
     if result:
@@ -55,7 +113,7 @@ def predict_by_image(rid):
         send_email_to_rescue_centers(rescuecenters)
 
         all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
-        send_email(all_users)
+        send_email_to_users(all_users)
 
     return True
 

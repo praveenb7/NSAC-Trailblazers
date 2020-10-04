@@ -15,8 +15,13 @@ from django.core.files import File
 
 
 # Create your views here.
-@login_required
 def Home(request):
+    return render(request, "index.html")
+
+
+# Create your views here.
+@login_required
+def Dashboard(request):
     user = request.user
     userprofile = models.Profile.objects.get(user=user)
     tasks.sleepy.delay()
@@ -93,7 +98,8 @@ def ReportFire(request):
         location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
         image = request.FILES['image']
         image = File(image)
-        report = models.UserReport.objects.create(image=image, location=location, user=user, verified=False, ongoing=False)
+        report = models.UserReport.objects.create(image=image, location=location, user=user, verified=False,
+                                                  ongoing=False)
         rid = int(report.id)
         tasks.predict_by_image.delay(rid)
 
@@ -132,7 +138,6 @@ def CommunityForumView(request):
     # all_users = all_users.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:20]
     all_users = models.Profile.objects.filter(location__distance_lt=(userprofile.location, measureDistance(km=10)))
 
-
     context = {
         "user": user,
         "all_users": all_users,
@@ -151,6 +156,36 @@ def UserProfileView(request):
         "profile": userprofile,
     }
     return render(request, "user/user_profile.html", context=context)
+
+
+class IotDeviceAPIView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request):
+        image_bool = self.request.query_params.get('image') or False
+        oxygen = request.POST['oxygen']
+        temperature = request.POST['temperature']
+        humidity = request.POST['humidity']
+        latitude = request.POST['latitude']
+        longitude = request.POST['longitude']
+        location = GEOSGeometry('SRID=4326;POINT(' + str(longitude) + ' ' + str(latitude) + ')')
+        if image_bool:
+            image = request.FILES['latitude']
+            image = File(image)
+            device_report = models.DeviceReports.objects.create(location=location, image=image, oxygen=oxygen,
+                                                                temperature=temperature, humidity=humidity,
+                                                                process_status=0, verified=False, ongoing=False)
+        else:
+            device_report = models.DeviceReports.objects.create(location=location, oxygen=oxygen,
+                                                                temperature=temperature, humidity=humidity,
+                                                                process_status=0, verified=False, ongoing=False)
+            tasks.predict_by_iot_inputs(device_report.id)
+
+        serializer = serializers.DeviceReportSerializer(device_report, many=False)
+        return Response({"data": serializer.data})
+
+    def get(self, request):
+        return Response([], status=200)
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
