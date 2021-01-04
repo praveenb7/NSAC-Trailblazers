@@ -1,43 +1,47 @@
 version: "3.8"
-
-x-environment: &environment
-  POSTGRES_DB: demo
-  POSTGRES_USER: postgres
-  POSTGRES_PASSWORD: postgres
-  POSTGRES_HOST: db
-#  GOOGLE_MAP_API_KEY: ${GOOGLE_MAP_API_KEY}
-
+   
 services:
-  db:
-    image: mdillon/postgis
-    container_name: db
-    environment:
-      <<: *environment
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-    ports:
-      - 5432:5432
-
-  web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/code
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
-
-  redis:
-    restart: always
-    image: redis:latest
-    ports:
-      - "6380:6380"
-    volumes:
-      - redisdata:/data
-    depends_on:
-      - web
-
+    django:
+        build: .
+        container_name: django
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - .:/usr/src/app/
+        ports:
+            - "8000:8000"
+        environment:
+            - DEBUG=1
+            - CELERY_BROKER=redis://redis:6379/0
+            - CELERY_BACKEND=redis://redis:6379/0
+        depends_on:
+            - postgres
+            - redis
+    celery:
+        build: .
+        command: celery -A taskscheduler worker -l INFO
+        volumes:
+            - .:/usr/src/app
+        environment:
+            - DEBUG=1
+            - CELERY_BROKER=redis://redis:6379/0
+            - CELERY_BACKEND=redis://redis:6379/0
+        depends_on:
+            - django
+            - redis
+    postgres:
+        image: postgres
+        container_name: postgres
+        environment:
+            - POSTGRES_DB=postgres
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata:/var/lib/postgresql/data/
+    redis:
+        image: "redis:alpine"
+        
 volumes:
-  postgres_data:
-  redisdata:
+    pgdata:
+

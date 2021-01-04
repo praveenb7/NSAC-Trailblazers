@@ -14,8 +14,8 @@ from django.conf import settings
 import os
 
 
+@shared_task()
 def classify(path):
-    # response = requests.get(path)
     # test_image = Image.open(BytesIO(response.content))
     test_image = image.load_img(path, target_size=(150, 150))
     test_image2 = image.img_to_array(test_image)
@@ -81,7 +81,6 @@ def predict_by_iot_inputs(did):
                 pass
             return True
     except Exception as error:
-        print("###############################################", error)
         pass
     return False
 
@@ -162,6 +161,5 @@ def send_email_function(email):
     message = "Fire in your Area"
     from_email = settings.DEFAULT_FROM_EMAIL
     to_email = [email, 'sanyam19092000@gmail.com']
-    print("####################### Sending Email", email)
     send_mail(subject=subject, message=message, from_email=from_email, recipient_list=to_email, fail_silently=True)
     return True

@@ -11,13 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca5653c-99d9-4e9d-ad07-1732f35dee9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/community_forum.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/nearby_fire_reports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/nearby_fire_stations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend2/templates/user/report_fire.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/backend2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/backend2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/predict_func.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iot_mimic_V-0.1" beforeDir="false" afterPath="$PROJECT_DIR$/ML model for csv data/iot_mimic_V-0.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend2/maps.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +47,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend2/templates/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend2/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend2/templates/user" />
       <recent name="$PROJECT_DIR$/backend2/static" />
       <recent name="$PROJECT_DIR$/backend2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend2" />
+      <recent name="$PROJECT_DIR$/ML model for csv data" />
+      <recent name="$PROJECT_DIR$/backend2/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.views">
@@ -156,6 +160,8 @@
       <workItem from="1601702963449" duration="302000" />
       <workItem from="1601722648403" duration="9648000" />
       <workItem from="1601735205340" duration="12255000" />
+      <workItem from="1609706002178" duration="4591000" />
+      <workItem from="1609773151231" duration="4204000" />
     </task>
     <servers />
   </component>
