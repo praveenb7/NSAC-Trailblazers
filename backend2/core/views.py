@@ -208,8 +208,6 @@ class IotDeviceAPIView(APIView):
         serializer = serializers.DeviceReportSerializer(device_report, many=False)
         return Response({"data": serializer.data})
 
-    def get(self, request):
-        return Response([], status=200)
 
 
 class ProfileViewSet(viewsets.ModelViewSet):

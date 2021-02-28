@@ -90,7 +90,6 @@ def predict_by_image(rid):
     report = UserReport.objects.filter(id=rid, process_status=0)[0]
     user = report.user
     userprofile = models.Profile.objects.get(user=user)
-    # print(settings.MEDIA_ROOT2)
     BASE_DIR = getattr(settings, "BASE_DIR", "/")
     # print(BASE_DIR)
 
@@ -104,9 +103,9 @@ def predict_by_image(rid):
         report.verified = True
         report.ongoing = True
         report.save()
-        fire_reports = models.RescueCenter.objects.all()
-        fire_reports = fire_reports.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:6]
-        send_email_to_fire_stations(fire_reports)
+        fire_stations = models.FireStation.objects.all()
+        fire_stations = fire_stations.annotate(distance=Distance("location", userprofile.location)).order_by('distance')[0:6]
+        send_email_to_fire_stations(fire_stations)
 
         rescuecenters = models.RescueCenter.objects.all()
         rescuecenters = rescuecenters.annotate(distance=Distance("location", userprofile.location)).order_by(

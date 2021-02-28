@@ -12,14 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dca5653c-99d9-4e9d-ad07-1732f35dee9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/backend2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/backend2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/core/predict_func.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend2/core/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend2/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot_mimic_V-0.1" beforeDir="false" afterPath="$PROJECT_DIR$/ML model for csv data/iot_mimic_V-0.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend2/maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend2/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend2/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +156,14 @@
       <workItem from="1601735205340" duration="12255000" />
       <workItem from="1609706002178" duration="4591000" />
       <workItem from="1609773151231" duration="4204000" />
+      <workItem from="1609841212610" duration="10570000" />
+      <workItem from="1609939135538" duration="11000" />
+      <workItem from="1610401649605" duration="2585000" />
+      <workItem from="1610411486096" duration="905000" />
+      <workItem from="1610502070755" duration="25000" />
+      <workItem from="1610553202185" duration="258000" />
+      <workItem from="1610634497039" duration="927000" />
+      <workItem from="1613413815017" duration="637000" />
     </task>
     <servers />
   </component>
